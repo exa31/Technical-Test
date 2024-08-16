@@ -17,6 +17,8 @@ import Orders from "../pages/orders/Orders";
 import { getOrder, getOrders } from "../api/orders";
 import EditOrder from "../pages/orders/EditOrder";
 import AddOrder from "../pages/orders/AddOrder";
+import ErrorLoader from "../pages/ErrorLoader";
+import NotFound from "../pages/NotFound";
 
 const loaderEditProduct = async ({ params }) => {
     const product = await getProduct(params.id);
@@ -40,6 +42,7 @@ const loaderOrders = async () => {
 const router = createBrowserRouter([
     {
         path: "/",
+        errorElement: <ErrorLoader />,
         element: <Layouts />,
         children: [
             {
@@ -105,6 +108,10 @@ const router = createBrowserRouter([
     {
         path: "/login",
         element: <Login />,
+    },
+    {
+        path: "*",
+        element: <NotFound />
     }
 ])
 
