@@ -25,7 +25,7 @@ export default function Table({ data, handleDelete }) {
                             <tr key={index}>
                                 <th>{index + 1}</th>
                                 <td>{order.user.name}</td>
-                                <td>{order.product.name}                                </td>
+                                <td>{order.product.name}</td>
                                 <td className='text-center'>{order.quantity}</td>
                                 <td>
                                     <Link to={`/edit-order/${order._id}`} className="btn btn-sm btn-ghost">Edit</Link>

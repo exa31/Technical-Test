@@ -21,7 +21,7 @@ export default function Sidebar({ openNav }) {
         <>
             {logout ? <Logout handleLogout={handleLogout} /> : null}
             <div className="sticky top-0 z-10">
-                <div className={openNav ? "flex flex-col w-40 duration-200 h-full min-h-screen md:block absolute pt-16 bg-base-300" : "flex flex-col md:w-40 w-0 absolute md:block  overflow-hidden h-full min-h-screen pt-16 bg-base-300 duration-200"}>
+                <div className={openNav ? "flex flex-col w-40 duration-200 h-full min-h-screen md:block absolute pt-16 bg-base-300" : "flex flex-col md:w-40 w-0 absolute md:static  overflow-hidden h-full min-h-screen pt-16 bg-base-300 duration-200"}>
                     <NavLink className={({ isActive }) =>
                         isActive ? "btn btn-ghost btn-active" : 'btn btn-ghost'
                     } to="/">Product</NavLink>
