@@ -5,7 +5,7 @@ import { getProduct, getProducts } from "../api/products";
 import EditProduct from "../pages/products/EditProducts";
 import { getCategories, getCategory } from "../api/categories";
 import AddProduct from "../pages/products/AddProduct";
-import Categories from "../pages/categories/categories";
+import Categories from "../pages/categories/Categories";
 import EditCategory from "../pages/categories/EditCategory";
 import AddCategory from "../pages/categories/AddCategory";
 import Login from "../layouts/Login";
